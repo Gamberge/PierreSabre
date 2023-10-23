@@ -24,7 +24,7 @@ public class Humain {
     }
     
     public void direBonjour() {
-    	parler("Bonjour ! Je m'appelle " + nom + " et j'aime boire du " + boissonFavorite + ".");
+    	parler("Bonjour ! Je m'appelle " + nom + " et j'aime boire du " + boissonFavorite);
     }
     
     public void boire() {
@@ -41,7 +41,7 @@ public class Humain {
     }
     
     public void parler(String texte) {
-		System.out.println("(" + nom + ") - " + texte);
+		System.out.println("( " + nom + " ) - " + texte);
 	}
     
     public void gagnerArgent(int gain) {
@@ -71,26 +71,4 @@ public class Humain {
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+  
