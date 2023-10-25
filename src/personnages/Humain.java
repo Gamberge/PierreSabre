@@ -33,10 +33,10 @@ public class Humain {
     
     public void acheter(String bien, int prix) {
     	if (argent >= prix) {
+    		parler("J'ai " + argent + " sous en poche. Je vais pouvoir m'offrir " + bien + " à " + prix + " sous.");
     		argent -= prix;
-    		parler("J'ai " + argent + " sous en poche. Je vais pouvoir m'offrir " + bien + " à " + prix + " sous");
     	} else {
-    		parler("J'ai " + argent + " sous en poche. Je ne peux même pas m'offrir " + bien + " à " + prix + " sous");
+    		parler("J'ai " + argent + " sous en poche. Je ne peux même pas m'offrir " + bien + " à " + prix + " sous.");
     	}
     }
     
