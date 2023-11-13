@@ -24,7 +24,7 @@ public class HistoireTP4 {
 		marco.recevoir(15);
 		marco.boire();
 		
-		yakuLeNoir.direBonjour();;
+		yakuLeNoir.direBonjour();
 		yakuLeNoir.extorquer(marco);
 		
 		roro.direBonjour();
