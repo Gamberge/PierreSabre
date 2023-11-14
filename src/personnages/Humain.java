@@ -5,7 +5,7 @@ public class Humain {
     private String boissonFavorite;
     private int argent;
     protected int nbConnaissance;
-    private Humain[] memoire;
+    protected Humain[] memoire;
 
     public Humain(String nom, String boissonFavorite, int argent) {
         this.nom = nom;
