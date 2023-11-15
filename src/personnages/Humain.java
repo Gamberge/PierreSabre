@@ -69,25 +69,24 @@ public class Humain {
         memoriser(humain);
     }
 
-    private void memoriser(Humain humain) {
+    public void memoriser(Humain humain) {
         if (nbConnaissance == memoire.length) {
-        	for (int i = 0; i < memoire.length-1; i++) {
-        		memoire[i] = memoire[i + 1];
-        	}
-        	memoire[nbConnaissance-1] = humain;
+            for (int i = 0; i < memoire.length - 1; i++) {
+                memoire[i] = memoire[i + 1];
+            }
+            memoire[nbConnaissance - 1] = humain;
         }
         if (nbConnaissance < memoire.length) {
             memoire[nbConnaissance] = humain;
             nbConnaissance++;
         }
     }
-    
-    
+
     public void listerConnaissance() {
         System.out.print("Je connais beaucoup de monde dont: ");
         for (int i = 0; i < nbConnaissance; i++) {
             System.out.print(memoire[i].getNom());
-            
+
             if (i < nbConnaissance - 1) {
                 System.out.print(", ");
             }
